@@ -19,7 +19,7 @@
 
     <br>
     <br>
-    <v-card outlined style="padding: 15px 15px 15px 15px ;">
+
       <v-container pa-2>
         <v-layout row wrap align-baseline justify-space-around>
             <v-flex col-sm-5 col-md-5 col-lg-5 col-12>
@@ -53,9 +53,9 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </v-card>
 
-    <v-container class="my-5" style=" padding: 0px;">
+
+    <v-container >
       <v-container pa-2>
                <v-card-title
                     class="headline blue darken-2 lighten-1"
@@ -1203,117 +1203,7 @@
       </v-container>
     </v-container>
 
-
-    <!-- <v-footer color="primary">
-      <v-container>
-        <v-card flat style="background-color: transparent;">
-          <v-card-text>
-            <v-layout row justify-center>
-              <v-flex col-md-4 col-lg-2 col-12>
-                <v-img src="https://pr.nca.by/img/nca.6a52f026.svg" aspect-ratio="3" contain></v-img>
-              </v-flex>
-              <v-flex
-                col-sm-5
-                col-md-3
-                col-lg-2
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                mt-2
-              >
-                <div >
-                  <ul class="footer-list">
-                    <li>
-                      <a>Вопросы и ответы</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/rV8Jpb">Онлайн-чат</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/PcaMnC">Форма обратной связи</a>
-                    </li>
-                  </ul>
-                </div>
-              </v-flex>
-
-              <v-flex
-                col-sm-5
-                col-md-2
-                col-lg-3
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                mt-5
-              >
-                <div>
-                  <ul class="footer-list">
-                    <li></li>
-                    <li>
-                      <a href="https://goo.gl/rV8Jpb">https://goo.gl/rV8Jpb</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/PcaMnC">https://goo.gl/PcaMnC</a>
-                    </li>
-                  </ul>
-                </div>
-              </v-flex>
-
-              <v-flex
-                col-sm-4
-                col-md-4
-                col-lg-2
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                pt-0
-                mt-2
-              >
-                <h4 class="white--text" style="margin-top:20px;">Контактные номера</h4>
-                <h4 class="white--text">E-mail</h4>
-              </v-flex>
-              <v-flex
-                col-sm-4
-                col-md-3
-                col-lg-2
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                pt-2
-                mt-3
-              >
-                <div mt-4>
-                  <ul class="footer-list">
-                    <li>
-                      <a href="tel:+375172881035">+375-17-288-10-35</a>
-                    </li>
-                    <li>
-                      <a href="tel:+375292206663">+375-29-220-66-63</a>
-                    </li>
-                    <li>
-                      <a href="email:2881035@nca.by">2881035@nca.by</a>
-                    </li>
-                  </ul>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-card-text>
-        </v-card>
-      </v-container>
-    </v-footer> -->
-
-    <v-footer
+   <v-footer
     color="primary "
     padless
   >
@@ -1377,9 +1267,9 @@
         class="primary  py-4 text-center white--text"
         cols="12"
       >
-      <v-layout justify-center style="margin: -10px">       
-        <v-flex col-md-4 col-lg-2 col-12>
-          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="3" contain></v-img>
+      <v-layout justify-center >       
+        <v-flex col-sm-4 col-md-3 col-lg-2 col-xl-1 col-12>
+          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="5"   contain></v-img>
         </v-flex>
       </v-layout>
       </v-col>

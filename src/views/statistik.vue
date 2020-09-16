@@ -1471,34 +1471,31 @@ import chart5 from "@/components/line_chart_fill";
       }
     },
     created(){
-    this.auth_geader = {
-       Autorization: 'Bearer ' + sessionStorage.getItem("nca_user_token"),
-    };
+      this.auth_geader = {
+        Autorization: 'Bearer ' + sessionStorage.getItem("nca_user_token"),
+      };
+      var self = this;
+      if ((sessionStorage.getItem("nca_role") != 'Администратор') && (sessionStorage.getItem("nca_role") != 'Куратор'))
+      {
+        this.$router.push('/');
+      }
 
-    if ((sessionStorage.getItem("nca_role") != 'Администратор') && (sessionStorage.getItem("nca_role") != 'Куратор'))
-    {
-      this.$router.push('/');
-    }
+        axios
+          .post("/countUsers", {headers: this.auth_geader})
+          .then(res => {
+            this.users = "Пользователей: " + res.data.rows[0].count;
+          })
+          .catch(function(error) {
+            self.$router.push('/');
+          });
 
-      axios
-        .post("/countUsers", {headers: this.auth_geader})
-        .then(res => {
-          this.users = "Пользователей: " + res.data.rows[0].count;
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-
-      axios
-        .post("/countconnections", {headers: this.auth_geader})
-        .then(res => {
-
-          this.connections = "Количество визитов: " + res.data.rows[0].count;
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-        
+        axios
+          .post("/countconnections", {headers: this.auth_geader})
+          .then(res => {
+            this.connections = "Количество визитов: " + res.data.rows[0].count;
+          })
+          .catch(function(error) {
+          });
     }
   }
 </script>

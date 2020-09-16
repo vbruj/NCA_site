@@ -3544,6 +3544,7 @@ export default {
         });
     },
     initialize() {
+      var self = this;
       axios
         .post("users", {headers: this.auth_geader})
         .then(res => {
@@ -3551,7 +3552,7 @@ export default {
           this.length = this.BdUsers.length
         })
         .catch(function(error) {
-          console.log(error);
+          self.$router.push('/');
         });
 
       axios

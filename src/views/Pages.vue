@@ -319,7 +319,7 @@ export default {
     this.auth_geader = {
       Autorization: 'Bearer ' + sessionStorage.getItem("nca_user_token"),
     };
-  
+
     this.loadJM();
     this.initialize();
     this.checkAdmin();
@@ -343,6 +343,8 @@ export default {
       }
     },
     loadJM(){
+      var self = this;
+      
         axios
           .post("/areas", {
             name_table: 'sdelka_s_izolir_pomesh_jm',
@@ -354,8 +356,7 @@ export default {
             this.areasJM = res.data;
           })
           .catch(function(error) {
-            
-            console.log(error);
+            self.$router.push('/');
           });
     },
 

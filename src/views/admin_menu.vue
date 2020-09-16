@@ -1775,6 +1775,11 @@ export default {
     this.auth_geader = {
       Autorization: 'Bearer ' + sessionStorage.getItem("nca_user_token"),
     };
+    if ((sessionStorage.getItem("nca_role") != 'Администратор'))
+    {
+      this.$router.push('/');
+    }
+
     this.initialize();
     this.loadJM();
     this.loadODObj();
@@ -3559,17 +3564,17 @@ export default {
           console.log(error);
         });
 
-      // axios
-      //   .post("organizacii_name", {headers: this.auth_geader})
-      //   .then(res => {
-      //     let dd = [];
-      //     this.BdOrg_name = res.data;
-      //     dd = Array.from(this.BdOrg_name)
-      //     Object.values(this.BdOrg_name)
-      //   })
-      //   .catch(function(error) {
-      //     console.log(error);
-      //   });
+      axios
+        .post("organizacii_name", {headers: this.auth_geader})
+        .then(res => {
+          let dd = [];
+          this.BdOrg_name = res.data;
+          dd = Array.from(this.BdOrg_name)
+          Object.values(this.BdOrg_name)
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
     },
     loadJM: async function() {
       this.BdJM = await axios.get("https://82.202.204.7:3333/JM");

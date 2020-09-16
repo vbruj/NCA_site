@@ -18,7 +18,7 @@
     </v-app-bar>
     <br>
     <br>
-    <v-card outlined style="padding: 15px 15px 15px 15px ;">
+
       <v-container pa-2>
         <v-layout row wrap align-baseline justify-space-around>
             <v-flex col-sm-5 col-md-5 col-lg-5 col-12>
@@ -52,8 +52,8 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </v-card>
-      <v-container class="my-5" style=" padding: 0px;">
+
+      <v-container >
         <v-container pa-2>
           <v-card-title
             class="headline blue darken-2 lighten-1"
@@ -1184,112 +1184,78 @@
           </v-card>
         </v-container>
       </v-container>
-    <v-footer color="primary">
-      <v-container>
-        <v-card flat style="background-color: transparent;">
-          <v-card-text>
-            <v-layout row justify-center>
-              <v-flex col-md-4 col-lg-2 col-12>
-                <v-img src="https://pr.nca.by/img/nca.6a52f026.svg" aspect-ratio="3" contain></v-img>
-              </v-flex>
-              <v-flex
-                col-sm-5
-                col-md-3
-                col-lg-2
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                mt-2
-              >
-                <div >
-                  <ul class="footer-list">
-                    <li>
-                      <a>Вопросы и ответы</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/rV8Jpb">Онлайн-чат</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/PcaMnC">Форма обратной связи</a>
-                    </li>
-                  </ul>
-                </div>
-              </v-flex>
-              <v-flex
-                col-sm-5
-                col-md-2
-                col-lg-3
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                mt-5
-              >
-                <div>
-                  <ul class="footer-list">
-                    <li></li>
-                    <li>
-                      <a href="https://goo.gl/rV8Jpb">https://goo.gl/rV8Jpb</a>
-                    </li>
-                    <li>
-                      <a href="https://goo.gl/PcaMnC">https://goo.gl/PcaMnC</a>
-                    </li>
-                  </ul>
-                </div>
-              </v-flex>
-              <v-flex
-                col-sm-4
-                col-md-4
-                col-lg-2
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                pt-0
-                mt-2
-              >
-                <h4 class="white--text" style="margin-top:20px;">Контактный номер</h4>
-                <h4 class="white--text">E-mail</h4>
-              </v-flex>
-              <v-flex
-                col-sm-4
-                col-md-3
-                col-lg-2
-                col-12
-                text-center
-                text-sm-left
-                text-md-left
-                text-lg-left
-                text-xl-left
-                pt-2
-                mt-3
-              >
-                <div mt-4>
-                  <ul class="footer-list">
-                    <li>
-                      <a href="tel:+375172881035">+375-17-288-10-35</a>
-                    </li>
-                    <li>
-                      <a href="tel:+375292206663">+375-29-220-66-63</a>
-                    </li>
-                    <li>
-                      <a href="email:2881035@nca.by">2881035@nca.by</a>
-                    </li>
-                  </ul>
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-card-text>
-        </v-card>
-      </v-container>
-    </v-footer>
+    <v-footer
+    color="primary "
+    padless
+  >
+    <v-row
+      justify="center"
+      no-gutters
+    >
+      <v-btn
+        href="https://goo.gl/rV8Jpb"
+        color="white"
+        text
+        rounded
+        class="my-2"
+      ><strong>Онлайн-чат</strong>
+      </v-btn>
+      <v-btn
+        href="https://goo.gl/PcaMnC"
+        color="white"
+        text
+        rounded
+        class="my-2"
+      >
+        <strong>Форма обратной связи</strong>
+      </v-btn>
+            <v-btn
+        href="email:2881035@nca.by"
+        color="white"
+        text
+        rounded
+        class="my-2"
+      >
+       <strong>E-mail</strong>
+        
+      </v-btn>
+      <v-menu offset-y rounded="b-xl">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          color="white"
+          text
+          class="my-2"
+          v-on="on"
+          v-bind="attrs"
+        >
+          <strong>Контактныe номера</strong>
+        </v-btn>
+      </template>
+        <v-list>
+          <v-list-item
+            href="tel:+375172881035"
+          >
+          <v-list-item-title>+375-17-288-10-35</v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            href="tel:+375292206663"
+          >
+            <v-list-item-title>+375-29-220-66-63</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <v-col
+        class="primary  py-4 text-center white--text"
+        cols="12"
+      >
+      <v-layout justify-center >       
+        <v-flex col-sm-4 col-md-3 col-lg-2 col-xl-1 col-12>
+          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="5"   contain></v-img>
+        </v-flex>
+      </v-layout>
+      </v-col>
+    </v-row>
+  </v-footer>
     <v-dialog v-model="dialog" max-width="500px">
       <v-card>
         <br />
@@ -1332,47 +1298,40 @@
     <div v-if="sendErrorSave">
       <v-alert type="error" style="position:fixed;bottom: 0px; left: 50px; ">Заполните все обязательные поля и поля с датой</v-alert>
     </div>
-    <v-speed-dial
-      v-model="fab"
-      class="mr-4 mb-2"
-      :top="top"
-      bottom
-      right
-      fixed
-      :left="left"
-      direction="left"
-      :open-on-hover="hover"
-      :transition="transition"
-    >
-      <template v-slot:activator>
-        <v-btn color="blue darken-2" v-model="fab" bottom right dark fab>
-          <v-icon v-if="fab">mdi-close</v-icon>
-          <v-icon v-else>mdi-plus</v-icon>
-        </v-btn>
-      </template>
-      <v-layout mt-1 class="fixed-buttons">
-        <v-btn style="width:138px;" dark medium rounded elevation-7 color="red" @click="cleare">
-          Очистить
-          <v-icon dark right>mdi-cancel</v-icon>
-        </v-btn>
-        <v-btn id="fileButton" style="width:138px;" dark medium rounded elevation-7 color="orange" @click="loadFile">
-          Файл
-          <v-icon dark right>mdi-file</v-icon>
-        </v-btn>
-        <v-btn
-          dark
-          medium
-          style="width:138px;"
-          rounded
-          elevation-7
-          color="indigo"
-          @click="save_data"
-          >
-          Отправить
-          <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
-        </v-btn>
-      </v-layout>
-    </v-speed-dial>
+      <v-speed-dial
+        v-model="fab"
+        class="mr-4 mb-2"
+        :top="top"
+        bottom
+        right
+        fixed
+        :left="left"
+        direction="left"
+        :open-on-hover="hover"
+        :transition="transition"
+      >
+        <template v-slot:activator>
+          <v-btn color="red" v-model="fab" bottom right dark fab>
+            <v-icon v-if="fab">mdi-close</v-icon>
+            <v-icon v-else>mdi-plus</v-icon>
+          </v-btn>
+        </template>
+        <v-layout mt-1 class="fixed-buttons">
+          <v-btn style="width:138px;" dark medium rounded elevation-7 color="red" @click="cleare">
+            Очистить
+            <v-icon dark right>mdi-cancel</v-icon>
+          </v-btn>
+
+          <v-btn style="width:138px;" dark medium rounded elevation-7 color="orange"  @click="loadFile">
+            Файл
+            <v-icon dark right>mdi-file</v-icon>
+          </v-btn>
+          <v-btn dark medium style="width:138px;" rounded elevation-7 color="indigo" @click="save_data">
+            Отправить
+            <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
+          </v-btn>
+        </v-layout>
+      </v-speed-dial>
   </v-app>
 </template>
 

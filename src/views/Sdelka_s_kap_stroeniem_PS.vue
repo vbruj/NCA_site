@@ -19,7 +19,7 @@
 
     <br>
     <br>
-    <v-card outlined style="padding: 15px 15px 15px 15px ;">
+
       <v-container pa-2>
         <v-layout row wrap align-baseline justify-space-around>
             <v-flex col-sm-5 col-md-5 col-lg-5 col-12>
@@ -53,18 +53,16 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </v-card>
 
-
-      <v-container class="my-5" style=" padding: 0px; ">
+      <v-container >
         <v-container pa-2>
-               <v-card-title
-                    class="headline blue darken-2 lighten-1"
-                    dark
-                    primary-title
-                  >
-                  <span class="white--text">ОБЩИЕ СВЕДЕНИЯ</span>
-                  </v-card-title>
+          <v-card-title
+            class="headline blue darken-2 lighten-1"
+            dark
+            primary-title
+          >
+          <span class="white--text">ОБЩИЕ СВЕДЕНИЯ</span>
+        </v-card-title>
 
           <v-card outlined style="padding: 15px 15px 15px 15px ;">
           <v-container pa-2>
@@ -990,7 +988,7 @@
           </v-card-title>
           
           <v-card outlined style="padding: 15px 15px 0px 15px ;">
-            <v-layout row wrap fill-height>
+            <v-layout row wrap fill-height align-baseline>
               <v-flex col-sm-2 col-md-2 col-lg-2 col-12>
                 <span>Электроснабжение</span>
               </v-flex>
@@ -1022,11 +1020,11 @@
                 <v-select
                   outlined
                   :items="default_value"
-                                  label="Заполнить"
-                ref="otoplenie2"
-                :rules="[() => !!data2['otoplenie2'] || 'Это поле обязательно к заполнению']"
-                :error-messages="errorMessages"
-                required
+                  label="Заполнить"
+                  ref="otoplenie2"
+                  :rules="[() => !!data2['otoplenie2'] || 'Это поле обязательно к заполнению']"
+                  :error-messages="errorMessages"
+                  required
                   placeholder=" "
                   :clearable="clearable"
                   v-model="data2['otoplenie2']"
@@ -1034,7 +1032,7 @@
               </v-flex>
             </v-layout>
 
-            <v-layout row wrap fill-height>
+            <v-layout row wrap fill-height align-baseline>
               <v-flex col-sm-2 col-md-2 col-lg-2 col-12>
                 <span>Холодное водоснабжение</span>
               </v-flex>
@@ -1045,11 +1043,11 @@
                 <v-select
                   outlined
                   :items="default_value"
-                                  label="Заполнить"
-                ref="holod_vodosnab2"
-                :rules="[() => !!data2['holod_vodosnab2'] || 'Это поле обязательно к заполнению']"
-                :error-messages="errorMessages"
-                required
+                  label="Заполнить"
+                  ref="holod_vodosnab2"
+                  :rules="[() => !!data2['holod_vodosnab2'] || 'Это поле обязательно к заполнению']"
+                  :error-messages="errorMessages"
+                  required
                   placeholder=" "
                   :clearable="clearable"
                   v-model="data2['holod_vodosnab2']"
@@ -1066,11 +1064,11 @@
                 <v-select
                   outlined
                   :items="default_value"
-                                  label="Заполнить"
-                ref="goryach_vodosnab2"
-                :rules="[() => !!data2['goryach_vodosnab2'] || 'Это поле обязательно к заполнению']"
-                :error-messages="errorMessages"
-                required
+                  label="Заполнить"
+                  ref="goryach_vodosnab2"
+                  :rules="[() => !!data2['goryach_vodosnab2'] || 'Это поле обязательно к заполнению']"
+                  :error-messages="errorMessages"
+                  required
                   placeholder=" "
                   v-model="data2['goryach_vodosnab2']"
                   :clearable="clearable"
@@ -1078,7 +1076,7 @@
               </v-flex>
             </v-layout>
 
-            <v-layout row wrap fill-height>
+            <v-layout row wrap fill-height align-baseline>
               <v-flex col-sm-2 col-md-2 col-lg-2 col-12>
                 <span>Водоотведение/канализация</span>
               </v-flex>
@@ -1089,11 +1087,11 @@
                 <v-select
                   outlined
                   :items="default_value"
-                                  label="Заполнить"
-                ref="canalis2"
-                :rules="[() => !!data2['canalis2'] || 'Это поле обязательно к заполнению']"
-                :error-messages="errorMessages"
-                required
+                  label="Заполнить"
+                  ref="canalis2"
+                  :rules="[() => !!data2['canalis2'] || 'Это поле обязательно к заполнению']"
+                  :error-messages="errorMessages"
+                  required
                   placeholder=" "
                   :clearable="clearable"
                   v-model="data2['canalis2']"
@@ -1110,18 +1108,18 @@
                 <v-select
                   outlined
                   :items="default_value"
-                                  label="Заполнить"
-                ref="gasosnab2"
-                :rules="[() => !!data2['gasosnab2'] || 'Это поле обязательно к заполнению']"
-                :error-messages="errorMessages"
-                required
+                  label="Заполнить"
+                  ref="gasosnab2"
+                  :rules="[() => !!data2['gasosnab2'] || 'Это поле обязательно к заполнению']"
+                  :error-messages="errorMessages"
+                  required
                   placeholder=" "
                   :clearable="clearable"
                   v-model="data2['gasosnab2']"
                 ></v-select>
               </v-flex>
             </v-layout>
-            <v-layout row wrap fill-height>
+            <v-layout row wrap fill-height align-baseline>
               <v-flex class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-12">
                 <span>Тип вентиляции</span>
               </v-flex>
@@ -1155,7 +1153,7 @@
           </v-card-title>
           
           <v-card outlined style="padding: 15px 15px 0px 15px ;">
-            <v-layout row wrap>
+            <v-layout row wrap align-baseline>
             <v-flex class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-12">
               <span>Цена сделки</span>
             </v-flex>
@@ -1200,7 +1198,7 @@
               ></v-select>
             </v-flex>
             </v-layout>
-            <v-layout row wrap>
+            <v-layout row wrap align-baseline>
             <v-flex col-sm-2 col-md-2 col-lg-2 col-12>
               <span>Доля</span>
             </v-flex>
@@ -1270,14 +1268,14 @@
             </v-flex>
             <v-flex class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-12">
               <v-textarea
-                      v-model="data['opisanie']" 
-                      disabled
-                      outlined
-                      placeholder=" "
-                      auto-grow
-                      row-height="15"
-                      rows="1"
-                    ></v-textarea>
+                v-model="data['opisanie']" 
+                disabled
+                outlined
+                placeholder=" "
+                auto-grow
+                row-height="15"
+                rows="1"
+              ></v-textarea>
             </v-flex>
           </v-layout>
 
@@ -1489,7 +1487,7 @@
             </v-flex>
             </v-layout>
 
-            <v-layout row wrap>
+            <v-layout row wrap align-baseline>
               <v-flex col-sm-2 col-md-2 col-lg-2 col-12>
                 <span>Продажа по договору с рассрочкой</span>
               </v-flex>
@@ -1548,7 +1546,8 @@
           </v-card>
         </v-container>
       </v-container>
-    <v-footer
+
+   <v-footer
     color="primary "
     padless
   >
@@ -1612,9 +1611,9 @@
         class="primary  py-4 text-center white--text"
         cols="12"
       >
-      <v-layout justify-center style="margin: -10px">       
-        <v-flex col-md-4 col-lg-2 col-12>
-          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="3" contain></v-img>
+      <v-layout justify-center >       
+        <v-flex col-sm-4 col-md-3 col-lg-2 col-xl-1 col-12>
+          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="5"   contain></v-img>
         </v-flex>
       </v-layout>
       </v-col>

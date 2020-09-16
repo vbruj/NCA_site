@@ -1474,6 +1474,12 @@ import chart5 from "@/components/line_chart_fill";
     this.auth_geader = {
        Autorization: 'Bearer ' + sessionStorage.getItem("nca_user_token"),
     };
+
+    if ((sessionStorage.getItem("nca_role") != 'Администратор') && (sessionStorage.getItem("nca_role") != 'Куратор'))
+    {
+      this.$router.push('/');
+    }
+
       axios
         .post("/countUsers", {headers: this.auth_geader})
         .then(res => {

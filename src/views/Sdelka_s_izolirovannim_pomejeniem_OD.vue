@@ -19,8 +19,8 @@
 
     <br>
     <br>
-    <v-card outlined style="padding: 15px 15px 15px 15px ;">
-      <v-container pa-2>
+
+      <v-container >
         <v-layout row wrap align-baseline justify-space-around>
             <v-flex col-sm-5 col-md-5 col-lg-5 col-12>
               <v-select
@@ -53,18 +53,16 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </v-card>
 
-    <v-container class="my-5" style=" padding: 0px;">
+    <v-container  >
       <v-container pa-2>
-               <v-card-title
+        <v-card-title
                     class="headline blue darken-2 lighten-1"
                     dark
                     primary-title
-                  >
-                  <span class="white--text">ОБЩИЕ СВЕДЕНИЯ</span>
-                  </v-card-title>
-
+        >
+          <span class="white--text">ОБЩИЕ СВЕДЕНИЯ</span>
+        </v-card-title>
 
         <v-card outlined style="padding: 15px 15px 15px 15px ;">
           <v-container pa-2>
@@ -1548,7 +1546,7 @@
       </v-container>
     </v-container>
 
-    <v-footer
+   <v-footer
     color="primary "
     padless
   >
@@ -1612,9 +1610,9 @@
         class="primary  py-4 text-center white--text"
         cols="12"
       >
-      <v-layout justify-center style="margin: -10px">       
-        <v-flex col-md-4 col-lg-2 col-12>
-          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="3" contain></v-img>
+      <v-layout justify-center >       
+        <v-flex col-sm-4 col-md-3 col-lg-2 col-xl-1 col-12>
+          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="5"   contain></v-img>
         </v-flex>
       </v-layout>
       </v-col>

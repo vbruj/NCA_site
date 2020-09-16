@@ -74,6 +74,7 @@ export default {
           sessionStorage.setItem("inf",JSON.stringify(res.data));
           sessionStorage.setItem("nomer_tor", (JSON.parse(sessionStorage.getItem('inf'))).tor);
           sessionStorage.setItem("nca_user_token",(JSON.parse(sessionStorage.getItem('inf'))).accessToken);
+          sessionStorage.setItem("nca_role",(JSON.parse(sessionStorage.getItem('inf'))).nca_role);
           this.$router.push("/pages");
         })
         .catch(function(error) {

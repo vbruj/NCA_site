@@ -238,9 +238,9 @@
         class="primary  py-4 text-center white--text"
         cols="12"
       >
-      <v-layout justify-center style="margin: -10px">       
-        <v-flex col-md-4 col-lg-2 col-12>
-          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="3" width="210px" contain></v-img>
+      <v-layout justify-center >       
+        <v-flex col-sm-4 col-md-3 col-lg-2 col-xl-1 col-12>
+          <v-img  src="https://pr.nca.by/img/nca.6a52f026.svg"  aspect-ratio="5"   contain></v-img>
         </v-flex>
       </v-layout>
       </v-col>
